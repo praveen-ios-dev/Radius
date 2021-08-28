@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F09BDC9126DA16F70054BC8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09BDC9026DA16F70054BC8D /* AppDelegate.swift */; };
+		F09BDC9326DA16F70054BC8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09BDC9226DA16F70054BC8D /* SceneDelegate.swift */; };
+		F09BDC9526DA16F70054BC8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09BDC9426DA16F70054BC8D /* ViewController.swift */; };
+		F09BDC9826DA16F70054BC8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F09BDC9626DA16F70054BC8D /* Main.storyboard */; };
+		F09BDC9B26DA16F70054BC8D /* Radius.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F09BDC9926DA16F70054BC8D /* Radius.xcdatamodeld */; };
+		F09BDC9D26DA16FA0054BC8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F09BDC9C26DA16FA0054BC8D /* Assets.xcassets */; };
+		F09BDCA026DA16FA0054BC8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F09BDC9E26DA16FA0054BC8D /* LaunchScreen.storyboard */; };
+		F09BDCAB26DA16FA0054BC8D /* RadiusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09BDCAA26DA16FA0054BC8D /* RadiusTests.swift */; };
+		F09BDCB626DA16FA0054BC8D /* RadiusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09BDCB526DA16FA0054BC8D /* RadiusUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F09BDCA726DA16FA0054BC8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F09BDC8526DA16F70054BC8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F09BDC8C26DA16F70054BC8D;
+			remoteInfo = Radius;
+		};
+		F09BDCB226DA16FA0054BC8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F09BDC8526DA16F70054BC8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F09BDC8C26DA16F70054BC8D;
+			remoteInfo = Radius;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F09BDC8D26DA16F70054BC8D /* Radius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Radius.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F09BDC9026DA16F70054BC8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F09BDC9226DA16F70054BC8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F09BDC9426DA16F70054BC8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F09BDC9726DA16F70054BC8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F09BDC9A26DA16F70054BC8D /* Radius.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Radius.xcdatamodel; sourceTree = "<group>"; };
+		F09BDC9C26DA16FA0054BC8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F09BDC9F26DA16FA0054BC8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F09BDCA126DA16FA0054BC8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F09BDCA626DA16FA0054BC8D /* RadiusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadiusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F09BDCAA26DA16FA0054BC8D /* RadiusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusTests.swift; sourceTree = "<group>"; };
+		F09BDCAC26DA16FA0054BC8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F09BDCB126DA16FA0054BC8D /* RadiusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadiusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F09BDCB526DA16FA0054BC8D /* RadiusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusUITests.swift; sourceTree = "<group>"; };
+		F09BDCB726DA16FA0054BC8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F09BDC8A26DA16F70054BC8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F09BDCA326DA16FA0054BC8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F09BDCAE26DA16FA0054BC8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F09BDC8426DA16F70054BC8D = {
+			isa = PBXGroup;
+			children = (
+				F09BDC8F26DA16F70054BC8D /* Radius */,
+				F09BDCA926DA16FA0054BC8D /* RadiusTests */,
+				F09BDCB426DA16FA0054BC8D /* RadiusUITests */,
+				F09BDC8E26DA16F70054BC8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F09BDC8E26DA16F70054BC8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F09BDC8D26DA16F70054BC8D /* Radius.app */,
+				F09BDCA626DA16FA0054BC8D /* RadiusTests.xctest */,
+				F09BDCB126DA16FA0054BC8D /* RadiusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F09BDC8F26DA16F70054BC8D /* Radius */ = {
+			isa = PBXGroup;
+			children = (
+				F09BDC9026DA16F70054BC8D /* AppDelegate.swift */,
+				F09BDC9226DA16F70054BC8D /* SceneDelegate.swift */,
+				F09BDC9426DA16F70054BC8D /* ViewController.swift */,
+				F09BDC9626DA16F70054BC8D /* Main.storyboard */,
+				F09BDC9C26DA16FA0054BC8D /* Assets.xcassets */,
+				F09BDC9E26DA16FA0054BC8D /* LaunchScreen.storyboard */,
+				F09BDCA126DA16FA0054BC8D /* Info.plist */,
+				F09BDC9926DA16F70054BC8D /* Radius.xcdatamodeld */,
+			);
+			path = Radius;
+			sourceTree = "<group>";
+		};
+		F09BDCA926DA16FA0054BC8D /* RadiusTests */ = {
+			isa = PBXGroup;
+			children = (
+				F09BDCAA26DA16FA0054BC8D /* RadiusTests.swift */,
+				F09BDCAC26DA16FA0054BC8D /* Info.plist */,
+			);
+			path = RadiusTests;
+			sourceTree = "<group>";
+		};
+		F09BDCB426DA16FA0054BC8D /* RadiusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F09BDCB526DA16FA0054BC8D /* RadiusUITests.swift */,
+				F09BDCB726DA16FA0054BC8D /* Info.plist */,
+			);
+			path = RadiusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F09BDC8C26DA16F70054BC8D /* Radius */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F09BDCBA26DA16FA0054BC8D /* Build configuration list for PBXNativeTarget "Radius" */;
+			buildPhases = (
+				F09BDC8926DA16F70054BC8D /* Sources */,
+				F09BDC8A26DA16F70054BC8D /* Frameworks */,
+				F09BDC8B26DA16F70054BC8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Radius;
+			productName = Radius;
+			productReference = F09BDC8D26DA16F70054BC8D /* Radius.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F09BDCA526DA16FA0054BC8D /* RadiusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F09BDCBD26DA16FA0054BC8D /* Build configuration list for PBXNativeTarget "RadiusTests" */;
+			buildPhases = (
+				F09BDCA226DA16FA0054BC8D /* Sources */,
+				F09BDCA326DA16FA0054BC8D /* Frameworks */,
+				F09BDCA426DA16FA0054BC8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F09BDCA826DA16FA0054BC8D /* PBXTargetDependency */,
+			);
+			name = RadiusTests;
+			productName = RadiusTests;
+			productReference = F09BDCA626DA16FA0054BC8D /* RadiusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F09BDCB026DA16FA0054BC8D /* RadiusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F09BDCC026DA16FA0054BC8D /* Build configuration list for PBXNativeTarget "RadiusUITests" */;
+			buildPhases = (
+				F09BDCAD26DA16FA0054BC8D /* Sources */,
+				F09BDCAE26DA16FA0054BC8D /* Frameworks */,
+				F09BDCAF26DA16FA0054BC8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F09BDCB326DA16FA0054BC8D /* PBXTargetDependency */,
+			);
+			name = RadiusUITests;
+			productName = RadiusUITests;
+			productReference = F09BDCB126DA16FA0054BC8D /* RadiusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F09BDC8526DA16F70054BC8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					F09BDC8C26DA16F70054BC8D = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					F09BDCA526DA16FA0054BC8D = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = F09BDC8C26DA16F70054BC8D;
+					};
+					F09BDCB026DA16FA0054BC8D = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = F09BDC8C26DA16F70054BC8D;
+					};
+				};
+			};
+			buildConfigurationList = F09BDC8826DA16F70054BC8D /* Build configuration list for PBXProject "Radius" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F09BDC8426DA16F70054BC8D;
+			productRefGroup = F09BDC8E26DA16F70054BC8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F09BDC8C26DA16F70054BC8D /* Radius */,
+				F09BDCA526DA16FA0054BC8D /* RadiusTests */,
+				F09BDCB026DA16FA0054BC8D /* RadiusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F09BDC8B26DA16F70054BC8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09BDCA026DA16FA0054BC8D /* LaunchScreen.storyboard in Resources */,
+				F09BDC9D26DA16FA0054BC8D /* Assets.xcassets in Resources */,
+				F09BDC9826DA16F70054BC8D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F09BDCA426DA16FA0054BC8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F09BDCAF26DA16FA0054BC8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F09BDC8926DA16F70054BC8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09BDC9526DA16F70054BC8D /* ViewController.swift in Sources */,
+				F09BDC9126DA16F70054BC8D /* AppDelegate.swift in Sources */,
+				F09BDC9326DA16F70054BC8D /* SceneDelegate.swift in Sources */,
+				F09BDC9B26DA16F70054BC8D /* Radius.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F09BDCA226DA16FA0054BC8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09BDCAB26DA16FA0054BC8D /* RadiusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F09BDCAD26DA16FA0054BC8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09BDCB626DA16FA0054BC8D /* RadiusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F09BDCA826DA16FA0054BC8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F09BDC8C26DA16F70054BC8D /* Radius */;
+			targetProxy = F09BDCA726DA16FA0054BC8D /* PBXContainerItemProxy */;
+		};
+		F09BDCB326DA16FA0054BC8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F09BDC8C26DA16F70054BC8D /* Radius */;
+			targetProxy = F09BDCB226DA16FA0054BC8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F09BDC9626DA16F70054BC8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F09BDC9726DA16F70054BC8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F09BDC9E26DA16FA0054BC8D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F09BDC9F26DA16FA0054BC8D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F09BDCB826DA16FA0054BC8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F09BDCB926DA16FA0054BC8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F09BDCBB26DA16FA0054BC8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G385H7W25Y;
+				INFOPLIST_FILE = Radius/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.praveenKumar.Radius;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F09BDCBC26DA16FA0054BC8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G385H7W25Y;
+				INFOPLIST_FILE = Radius/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.praveenKumar.Radius;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F09BDCBE26DA16FA0054BC8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G385H7W25Y;
+				INFOPLIST_FILE = RadiusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.praveenKumar.RadiusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Radius.app/Radius";
+			};
+			name = Debug;
+		};
+		F09BDCBF26DA16FA0054BC8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G385H7W25Y;
+				INFOPLIST_FILE = RadiusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.praveenKumar.RadiusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Radius.app/Radius";
+			};
+			name = Release;
+		};
+		F09BDCC126DA16FA0054BC8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G385H7W25Y;
+				INFOPLIST_FILE = RadiusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.praveenKumar.RadiusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Radius;
+			};
+			name = Debug;
+		};
+		F09BDCC226DA16FA0054BC8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G385H7W25Y;
+				INFOPLIST_FILE = RadiusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.praveenKumar.RadiusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Radius;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F09BDC8826DA16F70054BC8D /* Build configuration list for PBXProject "Radius" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F09BDCB826DA16FA0054BC8D /* Debug */,
+				F09BDCB926DA16FA0054BC8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F09BDCBA26DA16FA0054BC8D /* Build configuration list for PBXNativeTarget "Radius" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F09BDCBB26DA16FA0054BC8D /* Debug */,
+				F09BDCBC26DA16FA0054BC8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F09BDCBD26DA16FA0054BC8D /* Build configuration list for PBXNativeTarget "RadiusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F09BDCBE26DA16FA0054BC8D /* Debug */,
+				F09BDCBF26DA16FA0054BC8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F09BDCC026DA16FA0054BC8D /* Build configuration list for PBXNativeTarget "RadiusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F09BDCC126DA16FA0054BC8D /* Debug */,
+				F09BDCC226DA16FA0054BC8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F09BDC9926DA16F70054BC8D /* Radius.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F09BDC9A26DA16F70054BC8D /* Radius.xcdatamodel */,
+			);
+			currentVersion = F09BDC9A26DA16F70054BC8D /* Radius.xcdatamodel */;
+			path = Radius.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F09BDC8526DA16F70054BC8D /* Project object */;
+}
