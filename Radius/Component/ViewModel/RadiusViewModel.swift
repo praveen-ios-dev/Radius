@@ -12,8 +12,8 @@ protocol SelectionProtocol :class{
 }
 
 class RadiusViewModel {
-    private var model : RadiusModel?
-    private var exclusionDic : [String : String] = [:]
+    var model : RadiusModel?
+    var exclusionDic : [String : String] = [:]
     weak var radiusDelegate : SelectionProtocol?
     
     /// init coreData and fetch value from Coredata
@@ -104,14 +104,14 @@ class RadiusViewModel {
             selectedKey = exclusionDic[key].optionalValue
         }
         if let facilitys = model?.facilities{
-            for i in (indexPath.section+1)..<(facilitys.count){
-                if let options = facilitys[i].options{
-                    for j in 0...(options.count-1){
-                        options[j].isSelected = false
-                        if options[j].id == selectedKey{
-                            options[j].isEnabled = false
+            for indexValue in (indexPath.section+1)..<(facilitys.count){
+                if let options = facilitys[indexValue].options{
+                    for innerIndexValue in 0...(options.count-1){
+                        options[innerIndexValue].isSelected = false
+                        if options[innerIndexValue].id == selectedKey{
+                            options[innerIndexValue].isEnabled = false
                         }else{
-                            options[j].isEnabled = true
+                            options[innerIndexValue].isEnabled = true
                         }
                     }
                 }
@@ -129,4 +129,10 @@ class RadiusViewModel {
         return emptyString
     }
     
+    func getModel()->RadiusModel?{
+        if let model = model{
+            return model
+        }
+        return nil
+    }
 }

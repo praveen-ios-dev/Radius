@@ -23,7 +23,7 @@ class RadiusTableViewController: UITableViewController {
         RefreshManager.shared.loadDataIfNeeded { (isApiCallNeeded) in
             if isApiCallNeeded{
                 view.showLoading()
-                Worker.getRadiusList { [weak self] (response, error) in
+                Worker.getRadiusList(URL.assignmentAPI){ [weak self] (response, error) in
                     if let _ = response{
                         self?.view.stopLoading()
                         self?.radiusVM = RadiusViewModel()

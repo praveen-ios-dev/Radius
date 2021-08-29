@@ -10,7 +10,7 @@ import Foundation
 class RefreshManager {
     
     static let shared = RefreshManager()
-    private let defaults = UserDefaults.standard
+    let defaults = UserDefaults.standard
     private let calender = Calendar.current
     
     private init() {}
