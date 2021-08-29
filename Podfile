@@ -8,7 +8,6 @@ target 'Radius' do
   # Pods for Radius
 pod 'Alamofire', '~> 5.2'
 pod 'SwiftyJSON'
-#pod 'SwiftLint'
 
   target 'RadiusTests' do
     inherit! :search_paths
