@@ -1,0 +1,14 @@
+disabled_rules:
+  - colon
+  - trailing_whitespace
+  - vertical_whitespace
+  - unused_optional_binding
+  - line_length
+  - identifier_name
+
+excluded:
+  - Carthage
+  - Pods
+  - Source/ExcludedFolder
+  - Source/ExcludedFile.swift
+  - Source/*/ExcludedFile.swift

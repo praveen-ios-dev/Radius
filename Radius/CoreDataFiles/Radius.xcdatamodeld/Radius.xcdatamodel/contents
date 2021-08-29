@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="20G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDExclusions" representedClassName="CDExclusions" syncable="YES">
+        <attribute name="facility_id" optional="YES" attributeType="String"/>
+        <attribute name="options_id" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CDFacilities" representedClassName="CDFacilities" syncable="YES">
+        <attribute name="facility_id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="toOptions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDOptions" inverseName="toFacilitys" inverseEntity="CDOptions"/>
+    </entity>
+    <entity name="CDOptions" representedClassName="CDOptions" syncable="YES">
+        <attribute name="icon" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="isEnabled" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="isSelected" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="toFacilitys" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDFacilities" inverseName="toOptions" inverseEntity="CDFacilities"/>
+    </entity>
+    <elements>
+        <element name="CDFacilities" positionX="-409.9267578125" positionY="28.337646484375" width="128" height="88"/>
+        <element name="CDOptions" positionX="-54" positionY="9" width="128" height="133"/>
+        <element name="CDExclusions" positionX="-234" positionY="72" width="128" height="59"/>
+    </elements>
+</model>
